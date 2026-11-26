@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="judul">Selamat Datang</h2>
+    <button id="btnubah">Ubah Tampilan</button>
+
+    <script>
+        function ubahtampilan() {
+            const judul = document.getElementById("judul");
+            judul.textContent = "belajar dom javascript";
+            judul.style.color = "aqua";
+        }
+
+        document.getElementById("btnubah")
+            .addEventListener("click", ubahtampilan)
+    </script>
+</body>
+</html>

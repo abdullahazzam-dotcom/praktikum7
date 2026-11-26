@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>form sapaan</h2>
+    <input type="nama" type="text" placeholder="ketik nama">
+    <p id="pesan">silahkan isi nama</p>
+
+    <script> 
+        const inputNama = document.querySelector("nama");
+        const pesan = document.querySelector("#pesan");
+
+        function tampilansapaan() {
+            const nama = inputNama.value.trim();
+            pesan.textContent = nama === "" ?
+            "silahkan isi nama" : "halo, " + nama + "!";
+        }
+        inputNama.addEventListener("input", tampilansapaan);
+    </script>
+</body>
+</html>
